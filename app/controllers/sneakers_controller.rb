@@ -20,6 +20,13 @@ class SneakersController < ApplicationController
 
   end
 
+  def destroy
+    @sneaker = Sneaker.find(params[:id])
+    @sneaker.destroy
+    
+    render json: @sneaker
+  end
+
 
   private
 

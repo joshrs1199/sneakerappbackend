@@ -7,4 +7,6 @@ get '/sneakers', to: 'sneakers#index'
 
 post '/sneakers', to: 'sneakers#create'
 
+delete '/sneakers/:id', to: 'sneakers#destroy'
+
 end
