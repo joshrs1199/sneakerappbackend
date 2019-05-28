@@ -10,13 +10,13 @@ class SneakersController < ApplicationController
   end
 
   def new
-    @sneaker = Sneaker.new(params)
+    @sneaker = Sneaker.new(sneaker_params)
   end
 
   def create
     @sneaker = Sneaker.create(sneaker_params)
 
-    render json: @sneakers
+    render json: @sneaker
 
   end
 
